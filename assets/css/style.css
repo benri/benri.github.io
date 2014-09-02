@@ -3,3 +3,20 @@ body {
   font: 100% "Open Sans";
   color: #333;
 }
+
+/* line 13, ../compass/sass/style.scss */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 19, ../compass/sass/style.scss */
+nav li {
+  display: inline-block;
+}
+/* line 21, ../compass/sass/style.scss */
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
