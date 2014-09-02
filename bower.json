@@ -1,0 +1,19 @@
+{
+  "name": "benri.github.io",
+  "version": "0.0.1",
+  "dependencies": {
+    "sass-bootstrap": "~3.0.2",
+    "jquery": "~1.11.1",
+    "angular": "~1.2.23",
+    "bootstrap": "~3.2.0",
+    "angular-sanitize": "~1.2.23"
+  },
+  "authors": [
+    {
+      "name": "Benjamin Leong",
+      "email": "bleong@ucdavis.edu",
+      "homepage": "https://benri.github.io"
+    }
+  ],
+  "private": true
+}

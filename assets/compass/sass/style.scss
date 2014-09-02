@@ -1,0 +1,10 @@
+@import 'compass/css3';
+
+$font-stack: 'Open Sans';
+$primary-color: #39C;
+$primary-text-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
