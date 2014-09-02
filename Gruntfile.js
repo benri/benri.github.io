@@ -8,14 +8,14 @@ module.exports = function(grunt) {
     compass: {
       dist: {
         options: {
-          config: './assets/compass/config.rb',
+          config: 'assets/compass/config.rb',
         }
       },
     },
     wiredep: {
       target: {
         src: [
-          './index.html',   // .html support...
+          'index.html',   // .html support...
         ],
         cwd: '',
         dependencies: true,
@@ -26,23 +26,33 @@ module.exports = function(grunt) {
         overrides: {}
       }
     },
+    karma: {
+      unit: {
+        configFile: 'karma.conf.js',
+        background: true
+      }
+    },
     watch: {
       css: {
-        files: ['./assets/compass/sass/*.css'],
+        files: ['assets/compass/sass/*.scss'],
         tasks: ['compass'],
         options: {
           livereload: true
         }
       },
       bower_dep: {
-        files: ['./bower_components/*'],
+        files: ['bower_components/*'],
         tasks: ['wiredep'],
         options: {
           livereload: true,
         }
       },
+      karma: {
+        files: ['assets/js/*.js', 'test/**/*.js'],
+        tasks: ['karma:unit:run']
+      },
       dev: {
-        files: './index.html',
+        files: 'index.html',
         options: {
           livereload: true,
         }
@@ -57,8 +67,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-wiredep');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-karma');
 
   // Task definition
-  grunt.registerTask('default', ['watch']);
+  grunt.registerTask('default', ['karma:unit:start','watch']);
 
 };

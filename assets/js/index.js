@@ -1,17 +1,17 @@
+'use strict';
 
-(function() {
+(function(){
 
-	var app = angular.module('benri', ['ngSanitize']);
+	var app = angular.module('benri', []);
 
-	app.controller('name', ['$scope', function name($scope){
-		
-		$scope.stuff = '';
+	app.controller('bodyCtrl', ['$scope', function bodyController($scope){
+	
+		$scope.stuff = 'Pizza';
 
-		$scope.stuff = 'stuff';
+		$scope.stuff2 = 'Hotpocket';
 
-		$scope.dostuff = function() {
-			$scope.stuff = 'stuff';
-		};
 	}])
 
-})
+})();
+
+
