@@ -3,11 +3,9 @@
   "version": "0.0.1",
   "dependencies": {
     "jquery": "~1.11.1",
-    "angular": "~1.2.23",
-    "sass-bootstrap": "~3.0.2",
-    "bootstrap": "~3.2.0",
-    "angular-sanitize": "~1.2.23",
-    "angular-mocks": "~1.2.23"
+    "angular": "~2.0.0",
+    "bootstrap-sass": "~3.3.6",
+    "bootstrap": "~4.0.0-alpha.2"
   },
   "authors": [
     {

@@ -2,4 +2,7 @@
 .sass-cache/
 .sublime-grunt.cache
 
+.idea
+*.iml
+
 node_modules
